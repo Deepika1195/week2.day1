@@ -29,6 +29,7 @@ public class SeleniumLeapTap {
 		companyName.sendKeys("Softwaresolns");
 		WebElement firstName = driver.findElement(By.id("createLeadForm_firstName"));
 		firstName.sendKeys("Deepika");
+		System.out.println("Deepika");
 		WebElement lastName = driver.findElement(By.id("createLeadForm_lastName"));
 		lastName.sendKeys("Murugan");
 		driver.findElement(By.id("createLeadForm_firstNameLocal")).sendKeys("Deeps");
@@ -56,9 +57,9 @@ public class SeleniumLeapTap {
 		driver.findElement(By.id("createLeadForm_generalCity")).sendKeys("Seattle");
 		driver.findElement(By.id("createLeadForm_generalStateProvinceGeoId")).sendKeys("WA");
 		driver.findElement(By.id("createLeadForm_generalPostalCode")).sendKeys("98101");
-		driver.findElement(By.linkText("Create Lead")).click();
-		
+		driver.findElement(By.className("smallSubmit")).click();
 	
+		
 	}
 
 }
